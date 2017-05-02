@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Println("first codeschool lesson")
+	if len(os.Args)  > 1 {
+		fmt.Println(os.Args[1])
+	} else {
+		fmt.Println("don't be lazy")
+	}
 }
